@@ -167,5 +167,13 @@ section .buttons{
  section .buttons a{
     display:block;
 }
+aside{
+    width:-50%
+
+}
+aside.active{
+    width: 50%;
+    font-size: 15px;
+}
 
 }
