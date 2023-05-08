@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tesla
+  labels: 
+   app: tesla
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: tesla
+  template:
+    metadata:
+      labels:
+        app: tesla
+    spec:
+      containers:
+      - name: tesla
+        image: manarsalem/tesla-clone-image:v1
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tesla
+spec:
+  type: NodePort
+  selector:
+    app: tesla
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30003 #added node port
