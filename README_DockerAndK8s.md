@@ -9,7 +9,7 @@
  ## Docker steps 
   
   ### 1. Create dockerFile 
-   ![dockerFile](image.jpg)
+   ![dockerFile](/docker-k8s-images/dockerfile-image.png)
    
    
     As you see, the dockerFile contains only 2 lines. The first line reffered the base image of any web page, why nginx? beacuse it is the server      that can run web containers. the second line we copy all resourcses(including codes and images) to the container.
