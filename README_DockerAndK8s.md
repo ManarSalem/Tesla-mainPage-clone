@@ -28,9 +28,9 @@
  ### 1. Create Deployment.yaml file 
   The deployment file contains two parts: the deployment and service.
   
- ![imagecreation](/docker-k8s-images/deployment-file-img.png)
+ ![imagecreation](/docker-k8s-images/deployment-detailed-image.png)
 
- ![imagecreation](/docker-k8s-images/service-image.png)
+ ![imagecreation](/docker-k8s-images/service-detailed-image.png)
  
  ### 2. start your minikube and create the pod
   To start minikube, just write the command:minikube start 
