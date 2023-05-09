@@ -35,9 +35,16 @@
  ### 2. start your minikube and create the pod
   To start minikube, just write the command:minikube start 
   to create the pod(deployment and service) write the command : kubectl apply -f deployment.yaml.
-  image 1
-  image2
+  ![imagecreation](/docker-k8s-images/minikube-start.png)
+  ![imagecreation](/docker-k8s-images/create-pods-command.png)
+
   
   ### 3. Run 
-    now run the pod by writing command: minikube service nameOfService 
+  now run the pod by writing command: minikube service nameOfService 
+  ![imagecreation](/docker-k8s-images/access-page-command.png)
+
+# Here is the web page 
+![imagecreation](/docker-k8s-images/tesla-page-secreenshot.png)
+
+
  
